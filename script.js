@@ -1,16 +1,16 @@
-const search = document.getElementById("search"),
-  submit = document.getElementById("submit"),
-  random = document.getElementById("random"),
-  mealsEl = document.getElementById("meals"),
-  resultHeading = document.getElementById("result-heading"),
-  singleMealEl = document.getElementById("single-meal");
+const search = document.getElementById('search'),
+  submit = document.getElementById('submit'),
+  random = document.getElementById('random'),
+  mealsEl = document.getElementById('meals'),
+  resultHeading = document.getElementById('result-heading'),
+  singleMealEl = document.getElementById('single-meal');
 
 // Search meal and fetch from API
 function searchMeal(e) {
   e.preventDefault();
 
   // clear single meal
-  singleMealEl.innerHTML = "";
+  singleMealEl.innerHTML = '';
 
   // get search term
   const term = search.value;
@@ -34,16 +34,16 @@ function searchMeal(e) {
                 <h3>${meal.strMeal}</h3></div>
                 </div>`
             )
-            .join("");
+            .join('');
         }
       });
 
     // clear search text;
-    search.value = "";
+    search.value = '';
   } else {
-    alert("Please enter a search term.");
+    alert('Please enter a search term.');
   }
 }
 
 // Event listeners
-submit.addEventListener("submit", searchMeal);
+submit.addEventListener('submit', searchMeal);
