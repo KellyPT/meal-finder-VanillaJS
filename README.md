@@ -1,7 +1,5 @@
 # Meal Finder App with VanillaJS
 
-# New Year Countdown Clock with VanillaJS
-
 ## Objective 
 Create an app that could search and generate random meal recipes from the [TheMealDB API](https://www.themealdb.com/)
 
